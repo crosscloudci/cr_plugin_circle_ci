@@ -84,6 +84,7 @@ class CrPluginCircleCi::CLI::Commands::CircleCi < Admiral::Command
     end 
     if @returned_build_status == "not_found"
       puts "ERROR: failed to find project with given commit"
+      exit 1 
     else 
       puts "status\tbuild_url\n"
       puts "#{@returned_build_status}\t#{@returned_build_url}"
