@@ -1,0 +1,26 @@
+name: cr_plugin_circle_ci
+version: 0.1.0
+
+authors:
+  - W. Watson <W.Watson@vulk.coop>
+  - Joshua Darius <Joshua.Smith@vulk.coop>
+
+targets:
+  cr_plugin_github_actions:
+    main: src/cr_plugin_circle_ci.cr
+
+crystal: 0.31.1
+
+dependencies:
+  admiral:
+    github: jwaldrip/admiral.cr
+  halite:
+    github: icyleaf/halite
+  retriable:
+    github: Sija/retriable.cr
+  poncho:
+    github: icyleaf/poncho
+  debug:
+    github: Sija/debug.cr
+
+license: MIT

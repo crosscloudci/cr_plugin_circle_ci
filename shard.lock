@@ -1,0 +1,26 @@
+version: 1.0
+shards:
+  admiral:
+    github: jwaldrip/admiral.cr
+    version: 1.9.0
+
+  debug:
+    github: Sija/debug.cr
+    version: 1.1.0
+
+  habitat:
+    github: luckyframework/habitat
+    version: 0.4.3
+
+  halite:
+    github: icyleaf/halite
+    version: 0.10.4
+
+  poncho:
+    github: icyleaf/poncho
+    version: 0.3.0
+
+  retriable:
+    github: Sija/retriable.cr
+    version: 0.2.0
+

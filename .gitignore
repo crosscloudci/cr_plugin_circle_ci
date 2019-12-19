@@ -1,0 +1,8 @@
+/docs/
+/lib/
+/bin/status
+/.shards/
+*.dwarf
+.env
+*.swp
+*.swo
