@@ -29,7 +29,7 @@ class CrPluginCircleCi::CLI::Commands::CircleCi < Admiral::Command
 		paginated_limit = 100
 		paginated_offset = 0 
 		loop do 
-			poncho = Poncho.from_file "./.env"
+			# poncho = Poncho.from_file "./.env"
 			# r = client.get("/api/v1.1/project/#{poncho["VCS_TYPE"]}/#{poncho["USER_NAME"]}/#{URI.encode_www_form(flags.project)}?circle-token=#{poncho["CIRCLECI_API_KEY"]}&limit=100&filter=successful&shallow=true")
 			r = client.get("/api/v1.1/project/github/#{URI.encode_www_form(flags.project)}?circle-token=&limit=#{paginated_limit}&offset=#{paginated_offset}&shallow=true")
 			begin
